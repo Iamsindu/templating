@@ -1,0 +1,32 @@
+import React from 'react';
+// import {Link} from 'react-router-dom';
+// import bootstrap from 'bootstrap';
+
+import '../Styles/app.css';
+
+export const Footer = () => (
+    <div className="footer">
+        <div className="footer-top">
+            <div className="social">  
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(59, 89, 152); width: 2.5%; min-width: 25px; height: 18%; margin: 10px;"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> 
+            </div>
+        </div>
+        <div className="footer-bottom">
+            <div className="mail">
+                <span className="icon">mail</span>
+                <p>info@buddhainnovations.com </p>
+            </div>
+            <div className="address">
+                 <span className="icon">loc</span>
+                <p>Butwal, HorizonChowk Rupendehi </p>
+            </div>
+            <div className="phone">
+                <span className="icon">call</span>
+                <p>9843698970, 9844724666, 9847059925, 9857035052 </p>
+                <div className="copyright">
+                Copyright@Buddhainnovationstech.2020
+                </div>
+            </div>
+        </div>
+    </div>
+)
