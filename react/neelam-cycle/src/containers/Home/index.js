@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import Header from '../../components/header';
 import Banner from '../../components/banner';
 import Footer from '../../components/footer';
 import Contact from '../../components/contact'; 
@@ -14,17 +13,17 @@ function Home() {
         <div className="home-wrapper">
             <Container>
                 <Row>
-                    <Col> <Contact/>  </Col>
-                    <Col> <Banner />  </Col>
+                    <Col md={6} sm={12} > <Contact/>  </Col>
+                    <Col md={6} sm={12} > <Banner />  </Col>
                 </Row>
             </Container>
             <Container>
                 <Row>
-                    <Col> <Services />  </Col>
-                    <Col> <Distributor />  </Col>
+                    <Col md={6} sm={12} > <Services />  </Col>
+                    <Col md={6} sm={12}> <Distributor />  </Col>
                 </Row>
             </Container>
-            <Footer /> 
+                 <Footer /> 
         </div>
     )
 }
