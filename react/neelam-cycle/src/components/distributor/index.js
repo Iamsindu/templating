@@ -14,7 +14,7 @@ const Distributor = () =>{
         <img src={LogoNeelam} alt="Logo" className="logo" />
       </div>
       <div className="dist-wrapper--nlm_btn">
-        <input type="button" onClick={topFunction} className="btn--visit" value="Visit Site" />
+        <input type="button" onClick={topFunction} className="btn--info" value="Visit Site" />
       </div>
     </div>
   </div>

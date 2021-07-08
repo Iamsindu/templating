@@ -21,7 +21,7 @@ const Contact = () => (
                 <ImPhone className="mr" />
                  986-7112719 </span>
         </div>
-        <input type="button" className="btn--contact" value="Let's talk"/>
+        {/* <input type="button" className="btn--info" value="Let's talk"/> */}
     </div>
 )
 

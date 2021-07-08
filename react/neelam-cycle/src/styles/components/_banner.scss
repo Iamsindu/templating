@@ -1,4 +1,18 @@
-.banner--wrapper {
-    margin: 87px auto;
-    // width: 550px;
+.banner {
+    .btn--wrapper {
+        margin: 23px 0px 0px 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .btn--wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    
+    .banner--wrapper {
+        margin: 87px auto;
+        // width: 550px;
+    }
+
 }
