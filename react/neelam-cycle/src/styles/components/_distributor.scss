@@ -1,28 +1,23 @@
 .dist {
     font-family: 'Rajdhani', sans-serif;
-
-        &--heading {
+    
+    &--heading {
         font-weight: 600;
         font-size: 40px;
         line-height: 43px;
         color: #0E4360;
-        }
+    }
 
-        &-wrapper {
-            display: flex;
-            align-items: center;
+        &--logo {
             margin-top : 72px; 
             margin-bottom: 69px;
-            &--nlm_btn {
-                margin-left: 30px;
-            }
         }
 
-    // input.btn--visit {
-    //     margin-top: 153px;
-    //     margin-bottom: 142px;
-    // }
-    
+    input.btn--visit {
+        margin-top: 153px;
+        margin-bottom: 142px;
+    }
+
     .btn--visit{
         font-family: 'Rajdhani', sans-serif;
         font-size:22px;
@@ -31,11 +26,10 @@
         background: #0E4360;
         color: white;
         border-radius: 8px;
-        text-decoration: none;  
+        text-decoration: none;	
         opacity:1.0;
         box-shadow:none;
         border:none;
         padding: 13px 49px;
     }
 }
-
