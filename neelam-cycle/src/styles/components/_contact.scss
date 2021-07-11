@@ -1,0 +1,40 @@
+.contact {
+    font-family: 'Rajdhani', sans-serif;
+    // width: 437px;
+    
+    .tagline {
+        color: #484848;
+        font-size: 45px;
+        line-height: 59px;
+        font-weight: 700;
+    
+        b{
+            color : #0E4360;
+        }
+    }
+
+    &--add {
+        margin: 50px auto;
+        font-weight: 500;
+        font-size: 24px; 
+
+        .mr {
+            margin-right: 22px;
+        }
+    }
+
+    .btn--contact {
+        font-family: 'Rajdhani', sans-serif;
+        font-size:22px;
+        font-weight:600;
+        min-width: 100px;
+        background: #0E4360;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;	
+        opacity:1.0;
+        box-shadow:none;
+        border:none;
+        padding: 13px 49px;
+    }
+}
