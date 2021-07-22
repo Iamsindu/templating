@@ -3,13 +3,19 @@
 
     figcaption{
         position: absolute;
-        bottom: 3rem;
-        display: flex;
+        bottom: 2rem;
+        right: 45px;;
+        // display: flex;
     }
 }
 
 @media screen and (max-width: 992px){
     .contact{
+
+        img.img-fluid {
+            display: none;
+        }
+
         figcaption{
             position: inherit;
             margin: 30px 0px;
