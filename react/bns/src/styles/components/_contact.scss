@@ -1,0 +1,19 @@
+.contact__form {
+    background: #bdc5d0;
+
+    figcaption{
+        position: absolute;
+        bottom: 3rem;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contact{
+        figcaption{
+            position: inherit;
+            margin: 30px 0px;
+            // text-align: center;
+        }
+    }
+}
