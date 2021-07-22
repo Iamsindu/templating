@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0px;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #A29086;
+    font-weight: 700;
+}
+
+.container {
+    /* max-width: 710px; */
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header{
+    padding: 5px;;
+    max-width: 860px;;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+.navbar{
+    list-style: none;
+    display: block;
+    text-align: center;    
+}  
+
+ul li{
+    padding: 10px 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #5d5656;
+    font-size: 13px;
+}
+
+
+/*hero section*/
+.hero, .about, .skills__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px 0 10px 0px;
+}
+
+
+.hero__description--topic{
+    color: rgb(148, 147, 147);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.hero__description--name{
+    letter-spacing: 1px;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.hero__description--border {
+    border-bottom: 15px solid #A9B1EA;
+    z-index: -1;
+    width: 159px;
+    position: absolute;
+    left: 23%;
+    top: 66.5%;
+}
+
+.hero__description--content{
+    color: black;
+    line-height: 1.6;
+}
+
+.btn{
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 15px;;
+}
+
+.btn__primary{
+    background-color: #293DCB;
+}
+
+/* .btn__primary:hover{
+    background: #0b7dda;
+} */
+
+.image{
+    width:100%;
+    height:auto;
+    padding: 20px;
+}
+
+
+/*about-section*/
+.about__image{
+    width:50%;
+}
+
+.abt__img{
+    width:100%;
+    /* border: 15px solid #A9B1EA; */
+}
+
+.about__description{
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.border__wrapper {
+    position: absolute;
+    height: 510px;
+    border-left: 100px solid #A9B1EA;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.about__desc{
+    padding: 0 30px;
+}
+
+.about__description--name{
+    margin-top: 25px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.about__description--topic{
+    color: black;
+    font-size: 17px;
+    font-weight:600;
+    line-height: 2.6;
+}
+
+.blue{
+    color: #293DCB;
+}
+
+.ml{
+    margin-left: -9px;;
+}
+
+/* skills-section*/
+.skills{
+    padding: 40px 0;
+}
+
+.title__wrapper{
+    text-align: center;
+    width: 60%;
+    margin: 40px auto;
+    padding-left: 20px;
+    /* font-size: 16px; */
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.icon{
+    line-height: 2;
+}
+
+.subtitle{
+    line-height: 1.6;
+}
+
+.skills__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__wrapper--left, .skills__wrapper--right{
+    width: 50%;
+}
+
+.skills__box{
+    position: relative;
+    margin: 30px auto;
+    width: 80%;
+    line-height: 2;
+    font-size: 10px;
+    color: #a3a1a1db;
+}
+
+.skills__content{
+    line-height:1;
+}
+
+.percent{
+    position: absolute;
+    right: 5%;
+}
+
+.progress {
+  padding: 0;
+  width: 95%;
+  height: 5px;
+  overflow: hidden;
+  background: #f8f8f5eb;
+  border-radius: 6px;
+  margin: 7px 0;
+}
+
+.bar {
+    /* position:relative; */
+    float:left;
+    min-width:1%;
+    height:100%;
+    background: #293DCB;
+}
+
+.title__left{
+    text-align: left;
+}
+
+.skills__cards{
+    padding: 0;
+}
+
+.card{
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #293DCB;
+    color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.card__title{
+    text-transform: uppercase;
+    line-height: 2.6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.card__content,.service__box--desc{
+    line-height: 1.4;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.button__secondary{
+    position: relative;
+    margin: 5px auto 15px auto;
+
+}
+
+.btn__lm{
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bb{
+    position: absolute;
+    border-bottom: 10px solid #A9B1EA;
+    z-index: -1;
+    width: 90px;
+    left: 0%;
+    top: 55%;
+}
+
+.bb__blogs{
+    left: 38.5%;
+    width: 130px;
+}
+
+.bg__blue{
+    background: #293DCB;
+}
+
+/*services section*/
+.service__box{
+    width: 50%;
+    padding:15px;
+    margin:10px auto;
+}
+
+.service__box--title{
+    color: black;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    line-height: 2.6;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.services__lowerbox, .portfolio__lowerbox{
+    display:grid;
+    grid-template-columns: auto;
+}
+
+/*portfolio*/
+.portfolio__lowerbox{
+    grid-gap: 15px;
+}
+
+.portfolio__image{
+    width: 100%;
+    height: auto;
+}
+
+.portfolio__img{
+    width: 100%;
+}
+
+.portfolio__button, .blogs__button{
+    text-align: center;
+    margin:20px auto;
+}
+
+.black{
+    color:black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bb__portfolio{
+    left: 34.5%;
+    width: 174px;
+}
+
+
+
+/*testimonial*/
+.testimonial__lowerbox{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial__box{
+    border: 2px solid #8080802e;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.testimonial__content{
+    margin: 20px auto;
+}
+
+.testimonial__client--name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: black;
+    line-height: 2;
+}
+
+.testimonial__descrip{
+    width: 85%;
+    line-height: 1.5;
+}
+
+.testimonial__client--image{
+    width: 30%;
+    text-align: center;
+}
+
+.testimonial__client--img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial__client--details{
+    line-height: 1.3;
+    width: 70%;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.testimonial__buttons{
+    display: none;
+}
+
+/*blogs-section*/
+.blogs__card{
+    padding: 0px;
+    background: none;
+    color: #A29086;
+    border: 1px solid #8080802e;
+    border-radius: 5px;
+    line-height: 1.3;
+    width: 50%;
+    height: auto;
+    font-size: 14px;
+}
+
+.card__image{
+    width: 100%;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    /* width: 274px;
+    margin-left: -20px;
+    margin-top: -10px; */
+}
+
+.blogs__title {
+    line-height: 1.4;
+    margin: 10px auto;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    color:black;
+}
+
+.blogs__content{
+    margin: 3px auto;
+}
+
+.card__contents{
+    margin: 0px 20px;
+}
+
+.card__datetime{
+    line-height: 2;
+    font-size: 13px;
+}
+
+/*contact-section*/
+.contact{
+    margin: 40px auto;
+}
+
+.contact__wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.contact__left, .contact__right{
+    width: 80%;
+}
+
+.contact__left{
+    align-self: center;
+}
+
+.contact__img{
+    width: 100%;
+    height: auto;
+}
+
+.contact__form{
+    padding: 5px;
+}
+
+input[type=text],input[type=email], input[type=password], textarea {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #abd3f5;;
+}
+
+textarea{
+    width: 100%;
+}
+
+.fname, .lname, .email, .pwd {
+    width: 50%;
+}
+
+/*footer-section*/
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding:60px;
+}
+
+.social__icons{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fa{
+    color: #293DCB;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.footer__content{
+    font-weight: normal;
+}
+
+/*for screen above 768px to 992px i.e. tablets*/
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 500px;
+    }
+
+    .header, .navbar, .hero, .about{
+        display: flex;       
+    } 
+
+    .header{
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+    /*hero */
+    .hero, .about{
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero__description{
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .hero__description--border {
+        width: 160px;
+        left: 19.5%;
+    }
+    
+    .hero__image{
+        width: 50%;
+    }
+
+    /* about */
+    .about__description {
+        margin: 0px auto;
+        padding: 0px;
+        line-height: normal;
+    }
+
+    .about__desc {
+        margin: 0px;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .about__description--content {
+        font-size: 13px;
+    }
+
+    .border__wrapper{
+        height: 400px;
+    }
+
+    /*skills*/
+    .skills__wrapper{
+        flex-direction: row;
+    }
+
+    .title__left{
+        margin:40px 0;
+        padding: 0;
+    }
+
+    /*services*/
+    .service__box{
+        width:100%;
+    }
+    .services__lowerbox, .portfolio__lowerbox{
+        grid-template-columns: auto auto;
+    }
+
+    /*portfolio*/
+    .portfolio, .testimonial{
+        max-width: 1000px;
+    }
+
+    .bb__portfolio {
+        left: 38%;
+        width: 174px;
+    }
+
+     /*testimonial*/
+    .testimonial__lowerbox{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .testimonial__box{
+        width: 45%;
+        margin: 0 auto;
+    } 
+
+    .testimonial__buttons{
+        display: block;
+        text-align: center;
+        margin: 15px;
+    }
+
+    /* blogs */
+    .bb__blogs {
+        left: 36%;
+    }
+
+    .footer{
+        max-width: 1000px;
+    }
+}
+
+
+/*for screen above 992px to 1200px i.e. laptops*/
+@media (min-width: 992px) {
+    .container{
+        max-width: 700px;
+    }
+
+    .header, .skills__cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero__description--topic, .hero__description--content{
+        font-size: 16px;
+        margin: 10px auto;
+        font-weight: 800;;
+    }
+    
+    .hero__description--name{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    
+    .hero__description--border {
+        width: 245px;
+        left: 21%;
+    }
+
+    .image{
+        padding: 20px 0;
+    }
+
+    .card {
+        width: 33%;
+        margin: 10px;
+        padding-right: 35px;;
+    }
+
+    /* about */
+    .border__wrapper{
+        height: 360px;
+    }
+
+    /*services*/
+    .services__lowerbox, .portfolio__lowerbox{
+        grid-template-columns: auto auto auto;
+    }
+
+    /*portfolio*/
+    .portfolio{
+        max-width: 1200px;
+    }
+
+    .portfolio__title{
+        width: 56%;
+    }
+
+    .bb__portfolio{
+        left: 41%;
+    }
+
+    .img_5{
+        margin-top: -354px;
+    }
+
+     /*testimonial*/    
+    .testimonial__box{
+        margin:10px;
+    } 
+
+    /*blogs*/
+    .blogs__card{
+        width: 32%;
+        padding: 0px;
+    }
+
+    .bb__blogs {
+        left: 40.5%;
+    }
+
+    /* contact */
+    .contact__left, .contact__right {
+        width: 80%;
+    }
+
+    .fname, .lname, .email, .pwd {
+        width: 50%;
+    }
+
+    .footer{
+        max-width: 1200px;
+    }
+
+}    
+
+
+/*for screen above 1200px to infinity i.e. large screen monitors*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 900px;
+    }
+
+    .hero__description--border {
+        left: 16%;
+    }
+
+    .title__wrapper{
+        margin: 60px auto 30px auto;
+    }
+
+    .title__left{
+        margin: 60px 0 30px 0;
+    }
+
+    .border__wrapper{
+        height: 330px;
+    }
+
+    /*skills*/
+    .progress{
+        width:100%;
+    }
+
+    /*portfolio*/
+    .portfolio{
+        max-width: 2000px;
+    }
+
+    .bb__portfolio {
+        left: 42.5%;
+    }
+
+    /* blogs */
+    .bb__blogs {
+        left: 42.5%;
+    }
+
+    /*contact*/
+    .contact__wrapper{
+        flex-flow: row wrap;
+    }
+
+    .contact__left, .contact__right {
+        width: 50%;
+    }
+
+    .contact__img{
+        padding: 80px 0;
+    }
+
+    .footer{
+        max-width: 1500px;
+    }
+    
+}
