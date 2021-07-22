@@ -3,7 +3,7 @@ import React from 'react';
 //react-bootstrap
 import { Container, Row, Col } from 'react-bootstrap';
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // react-icons
 import {ImPhone} from 'react-icons/im'; 
@@ -50,7 +50,7 @@ const Header = () => {
       <div className="header__bottom">
         <Navbar collapseOnSelect expand="lg" className="navheader">
           <Container>
-            <Navbar.Brand href="/">
+            <Navbar.Brand as={Link} to="/">
               <div className="navheader__logo">
                 <img src={logo} alt="logo" className="logo" width="82px" height="72px"/>
               </div>
@@ -59,16 +59,16 @@ const Header = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
               <Nav>
-                <Nav.Link href="/" className="nav-items">Home</Nav.Link>
-                <Nav.Link href="/about" className="nav-items">About</Nav.Link>                
-                <NavDropdown href="/services" className="nav-items text-dark" title="Services" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="/services">INDUSTRIAL CLEANING </NavDropdown.Item>
+                <Nav.Link as={Link} to="/" className="nav-items">Home</Nav.Link>
+                <Nav.Link as={Link} to="/about" className="nav-items">About</Nav.Link>                
+                <NavDropdown as={Link} to="/services" className="nav-items text-dark" title="Services" id="collasible-nav-dropdown">
+                  <NavDropdown.Item as={Link} to="/services">INDUSTRIAL CLEANING </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/services">RESIDENTIAL CLEANING</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/services">RESIDENTIAL CLEANING</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/services">COMMERCIAL CLEANING </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/services">COMMERCIAL CLEANING </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/contact" className="nav-items">Contact</Nav.Link>
+                <Nav.Link as={Link} to="/contact" className="nav-items">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
